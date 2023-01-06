@@ -14,139 +14,140 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body class="bg-light">
-    <!-- navigation -->
-    <nav class="navbar navbar-expand-lg bg-white shadow-sm">
-        <div class="container">
-            <a class="navbar-brand" href="#">Navbar</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            Dropdown
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link disabled">Disabled</a>
-                    </li>
-                </ul>
-                <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
+    <!-- dashboard section -->
+
+    <section>
+        <!-- aside nav-->
+        <aside class="bg-white shadow-sm fixed-top" id="#aside">
+            <!-- logo -->
+            <!-- row -->
+            <div class="row p-4">
+                <!-- col -->
+                <div class="col-12 d-flex justify-content-center flex-column align-items-center">
+                    <img src="./assets/images/user-logo.jpg" alt="Logo" width="80" height="80" class="rounded-circle">
+                    <div class="mt-2 fw-bold">Kanchan</div>
+                </div>
+                <!-- /col -->
             </div>
-        </div>
-    </nav>
-    <!-- /navigation -->
-    <!-- container -->
-    <div class="container mt-5">
-        <!-- row -->
-        <div class="row">
-            <!-- col -->
-            <div class="col-12">
-                <!-- table -->
-                <table class="table table-striped shadow-sm bg-white">
-                    <thead>
-                        <tr>
-                            <th scope="col">#</th>
-                            <th scope="col">First</th>
-                            <th scope="col">Last</th>
-                            <th scope="col">Handle</th>
-                            <th scope="col">Action</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <th scope="row">1</th>
-                            <td>Mark</td>
-                            <td>Otto</td>
-                            <td>@mdo</td>
-                            <td>
-                                <button class="bg-dark text-white border-0">Edit</button>
-                                <button class="bg-danger text-white border-0">Delete</button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <th scope="row">2</th>
-                            <td>Jacob</td>
-                            <td>Thornton</td>
-                            <td>@fat</td>
-                            <td>
-                                <button class="bg-dark text-white border-0">Edit</button>
-                                <button class="bg-danger text-white border-0">Delete</button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <th scope="row">2</th>
-                            <td>Jacob</td>
-                            <td>Thornton</td>
-                            <td>@fat</td>
-                            <td>
-                                <button class="bg-dark text-white border-0">Edit</button>
-                                <button class="bg-danger text-white border-0">Delete</button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <th scope="row">2</th>
-                            <td>Jacob</td>
-                            <td>Thornton</td>
-                            <td>@fat</td>
-                            <td>
-                                <button class="bg-dark text-white border-0">Edit</button>
-                                <button class="bg-danger text-white border-0">Delete</button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <th scope="row">2</th>
-                            <td>Jacob</td>
-                            <td>Thornton</td>
-                            <td>@fat</td>
-                            <td>
-                                <button class="bg-dark text-white border-0">Edit</button>
-                                <button class="bg-danger text-white border-0">Delete</button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <th scope="row">2</th>
-                            <td>Jacob</td>
-                            <td>Thornton</td>
-                            <td>@fat</td>
-                            <td>
-                                <button class="bg-dark text-white border-0">Edit</button>
-                                <button class="bg-danger text-white border-0">Delete</button>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-                <!-- /table -->
+            <!-- /row -->
+            <!-- row -->
+            <div class="row">
+                <!-- col -->
+                <div class="col-12">
+                    <!-- ul -->
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link py-3 active" href="#"><i class="fa-solid fa-gauge"></i><span
+                                    class="ms-3">Dashboard</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link py-3" href="#"><i class="fa-brands fa-wpforms"></i><span
+                                    class="ms-3">Forms</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link py-3" href="#"><i class="fa-solid fa-gauge"></i><span class="ms-3">Form
+                                    Template</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link py-3" href="#"><i class="fa-solid fa-gauge"></i><span
+                                    class="ms-3">Campaigns</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link py-3" href="#"><i class="fa-solid fa-gauge"></i><span
+                                    class="ms-3">Submissions</span></a>
+                        </li>
+                    </ul>
+                    <!-- /ul -->
+                </div>
+                <!-- /col -->
             </div>
-            <!-- /col -->
-        </div>
-        <!-- /row -->
-    </div>
-    <!-- /container -->
+            <!-- /row -->
+            <!-- /logo -->
+        </aside>
+        <!-- /aside nav-->
+        <!-- main -->
+        <main>
+            <!-- header -->
+            <header class="w-100 shadow-sm bg-white">
+                <!-- header-nav -->
+                <nav class="navbar navbar-expand w-100">
+                    <div class="container-fluid">
+                        <div class="border rounded-circle shadow-sm p-2" id="aside-toggle-btn">
+                            <!-- menu-svg -->
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                                class="bi bi-list" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z">
+                                </path>
+                            </svg>
+                            <!-- /menu-svg -->
+                        </div>
+                        <div>
+                            <ul class="navbar-nav ms-auto">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">
+                                        <!--wishlist-svg-->
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round"
+                                            class="feather feather-heart align-middle">
+                                            <path
+                                                d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
+                                            </path>
+                                        </svg>
+                                        <!--/wishlist-svg-->
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">
+                                        <!--notification-svg-->
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round"
+                                            class="feather feather-bell align-middle">
+                                            <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path>
+                                            <path d="M13.73 21a2 2 0 0 1-3.46 0"></path>
+                                        </svg>
+                                        <!--/notification-svg-->
+                                    </a>
+                                </li>
+                                <li class="nav-item dropdown user-dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink"
+                                        role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <!--profile-svg-->
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                            fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+                                            <path
+                                                d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z">
+                                            </path>
+                                        </svg>
+                                        <!--/profile-svg-->
+                                        <span>Kanchan</span>
+                                    </a>
+                                    <ul class="dropdown-menu shadow-sm" aria-labelledby="navbarDropdownMenuLink">
+                                        <li><a class="dropdown-item" href="#">Action</a></li>
+                                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+                <!-- /header-nav -->
+            </header>
+            <!-- /header -->
+        </main>
+        <!-- /main -->
+    </section>
+    <!-- /dashboard section -->
     <!-- Boostrap JS -->
     <script src="./assets/js/bootstrap.bundle.min.js"></script>
     <!-- Custom JS -->
