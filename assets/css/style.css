@@ -1,4 +1,5 @@
 /* ========= Global CSS ============= */
+/* ========= Bootstrap Variables ============= */
 
 body {
     font-family: 'Rubik', sans-serif;
@@ -43,3 +44,7 @@ header #aside-toggle-btn {
     width: 30px;
     height: 30px;
 }
+
+/* .shadow-card {
+    box-shadow: 0 0 20px -3px rgb(60 84 126 / 30%);
+} */
