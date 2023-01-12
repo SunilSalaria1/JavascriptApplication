@@ -21,8 +21,18 @@
 </head>
 
 <body class="bg-light">
+    <!-- page-loader -->
+    <div id="pageLoader"
+        class="loader-wrap h-100 w-100 bg-light d-flex flex-column justify-content-center align-items-center">
+        <div class="load-1">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <h2 data-text="JavascriptApplication">JavascriptApplication</h2>
+    </div>
+    <!-- /page-loader -->
     <!-- dashboard section -->
-
     <section>
         <!-- aside nav-->
         <aside class="bg-white shadow-sm fixed-top" id="#aside">
@@ -31,7 +41,8 @@
             <div class="row p-4">
                 <!-- col -->
                 <div class="col-12 d-flex justify-content-center flex-column align-items-center border-bottom pb-3">
-                    <img src="./assets/images/user-logo.jpg" alt="Logo" width="60" height="60" class="rounded-circle shadow-sm">
+                    <img src="./assets/images/user-logo.jpg" alt="Logo" width="60" height="60"
+                        class="rounded-circle shadow-sm">
                     <div class="text-primary mt-2 fw-bold">Kanchan</div>
                     <small class="text-center">Frontend Developer</small>
                 </div>
@@ -244,8 +255,7 @@
                                 <button class="d-flex align-items-center btn btn-primary shadow-sm rounded-0"><i
                                         class="fa-solid fa-check"></i><span class="ms-2">Submit Now</span>
                                 </button>
-                                <button
-                                    class="d-flex align-items-center btn btn-danger shadow-sm rounded-0 ms-3"><i
+                                <button class="d-flex align-items-center btn btn-danger shadow-sm rounded-0 ms-3"><i
                                         class="fa-solid fa-xmark"></i><span class="ms-2">Cancel Now</span></button>
                             </div>
                         </div>
