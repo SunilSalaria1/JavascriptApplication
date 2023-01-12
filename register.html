@@ -30,45 +30,56 @@
                             <!-- row -->
                             <div class="row m-0">
                                 <!-- col -->
-                                <div class="col-12 px-4 mb-4 pb-2 border-bottom">
-                                    <h3>Register with us!</h3>
+                                <div class="col-12 px-4 mb-3 pb-2 border-bottom">
+                                    <h4 class="fw-bold text-primary">Register with Us!</h4>
                                 </div>
                                 <!-- /col -->
                                 <!-- col -->
                                 <div class="col-12 px-4">
                                     <form>
-                                        <div class="mb-4">
-                                            <label class="form-label">Name</label>
-                                            <input type="text" placeholder="John Smith"
+                                        <div class="mb-3">
+                                            <label class="form-label">First Name <span class="text-danger">*</span></label>
+                                            <input type="text" placeholder="John"
+                                                class="form-control shadow-sm rounded-0" required>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label class="form-label">Last Name</label>
+                                            <input type="text" placeholder="Smith"
                                                 class="form-control shadow-sm rounded-0">
                                         </div>
-                                        <div class="mb-4">
-                                            <label class="form-label">Email</label>
+                                        <div class="mb-3">
+                                            <label class="form-label">Email <span class="text-danger">*</span></label>
                                             <input type="email" placeholder="john@gmail.com"
-                                                class="form-control shadow-sm rounded-0">
+                                                class="form-control shadow-sm rounded-0" required>
                                         </div>
-                                        <div class="mb-4">
+                                        <div class="mb-3">
+                                            <label class="form-label">Profession <span class="text-danger">*</span></label>
+                                            <select class="shadow-sm rounded-0 form-select"
+                                                aria-label="Default select example" required>
+                                                <option selected>Select your Role</option>
+                                                <option value="1">Human Resource</option>
+                                                <option value="2">Front End Developer</option>
+                                                <option value="3">Backend Developer</option>
+                                                <option value="4">Full Stack Developer</option>
+                                            </select>
+                                        </div>
+                                        <div class="mb-3">
                                             <label class="form-label">Phone Number</label>
                                             <input type="text" placeholder="+91 46383746473"
                                                 class="form-control shadow-sm rounded-0">
                                         </div>
-                                        <div class="mb-4">
-                                            <label class="form-label">Current Location</label>
-                                            <input type="text" placeholder="Amritsar"
-                                                class="form-control shadow-sm rounded-0">
-                                        </div>
-                                        <div class="mb-4">
-                                            <label class="form-label">Password</label>
+                                        <div class="mb-3">
+                                            <label class="form-label">Password <span class="text-danger">*</span></label>
                                             <input type="password" placeholder="******"
                                                 class="form-control shadow-sm rounded-0">
                                         </div>
-                                        <div class="mb-4">
-                                            <label class="form-label">Confirm Password</label>
+                                        <div class="mb-3">
+                                            <label class="form-label">Confirm Password <span class="text-danger">*</span></label>
                                             <input type="password" placeholder="******"
                                                 class="form-control shadow-sm rounded-0">
                                         </div>
                                         <button type="submit"
-                                            class="btn btn-dark shadow-sm rounded-0 w-100 mb-4">Register
+                                            class="btn btn-primary shadow-sm rounded-0 w-100 mb-3">Register
                                             Now</button>
                                         <div class="text-center">Already have an account? <a href="./login.html"
                                                 class="text-dark">Login

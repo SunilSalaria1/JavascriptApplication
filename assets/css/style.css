@@ -1,14 +1,60 @@
-/* ========= Global CSS ============= */
-/* ========= Bootstrap Variables ============= */
 
+/* ========= Theme colors ============= */
+
+.bg-primary {
+    background-color: #7634c3 !important;
+}
+.btn-primary{
+    background-color: #7634c3 !important;
+    border-color: #7634c3 !important;
+}
+.btn-primary:hover{
+    background-color: #5e14b2 !important;
+}
+.text-primary {
+    color: #7634c3 !important;
+}
+
+.border-primary {
+    border-color: #7634c3 !important;
+}
+
+
+/* Global CSS */
 body {
     font-family: 'Rubik', sans-serif;
 }
 
 .form-control:focus,
-.form-check-input:focus {
-    border-color: black;
+.form-check-input:focus,
+.form-select:focus {
+    border-color: #7634c3;
     box-shadow: none;
+}
+
+.form-control,
+.form-select {
+    font-size: 1rem !important;
+}
+
+.pagination .active .page-link {
+    background-color: #7634c3 !important;
+    border-color: #7634c3;
+    color: white !important;
+}
+
+.pagination .page-link {
+    color: black !important;
+}
+
+.pagination .page-link:focus {
+    box-shadow: 0 .125rem .25rem #00000017 !important;
+}
+
+.dropdown .dropdown-menu .dropdown-item:focus, .dropdown .dropdown-menu .dropdown-item:hover{
+   background-color: #7634c3 !important;
+   color: white !important;
+
 }
 
 /* ========= Index CSS ============= */
@@ -22,10 +68,17 @@ aside {
     color: black;
 }
 
-.nav .nav-item .active {
-    background-color: #212529;
-    color: white;
+.nav .nav-item .active, .nav .nav-item .nav-link.active:hover{
+    background-color: #7634c3;
+    color: white !important;
     box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .075) !important;
+}
+.nav .nav-item .nav-link:hover, .nav .nav-item .nav-link:focus {
+    color: #7634c3 !important;
+}
+
+.dropdown-toggle::after {
+    display: none !important;
 }
 
 main {
@@ -40,11 +93,13 @@ header .dropdown .show {
 header #aside-toggle-btn {
     cursor: pointer;
 }
-.status-icon{
+
+.status-icon {
     width: 30px;
     height: 30px;
 }
 
 /* .shadow-card {
     box-shadow: 0 0 20px -3px rgb(60 84 126 / 30%);
+    color: #7634c3
 } */

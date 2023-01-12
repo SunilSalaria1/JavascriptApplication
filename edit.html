@@ -5,7 +5,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Edit - Javascript Application</title>
+    <title>Admin Portal - Javascript Application</title>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
     <!-- Custom CSS -->
@@ -14,7 +14,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body>
     <!-- Form Section -->
     <section class="vh-100  bg-light">
@@ -29,48 +34,64 @@
                             <!-- row -->
                             <div class="row m-0">
                                 <!-- col -->
-                                <div class="col-12 px-4 mb-4 pb-2 border-bottom">
-                                    <h3>Edit the details!</h3>
+                                <div class="col-12 px-4 mb-3 pb-2 border-bottom">
+                                    <h4 class="fw-bold text-primary">Edit Details</h4>
                                 </div>
                                 <!-- /col -->
                                 <!-- col -->
                                 <div class="col-12 px-4">
                                     <form>
-                                        <div class="mb-4">
-                                            <label class="form-label">Name</label>
-                                            <input type="text" placeholder="John Smith"
+                                        <div class="mb-3">
+                                            <label class="form-label">First Name</label>
+                                            <input type="text" placeholder="John"
                                                 class="form-control shadow-sm rounded-0">
                                         </div>
-                                        <div class="mb-4">
+                                        <div class="mb-3">
+                                            <label class="form-label">Last Name</label>
+                                            <input type="text" placeholder="Smith"
+                                                class="form-control shadow-sm rounded-0">
+                                        </div>
+                                        <div class="mb-3">
                                             <label class="form-label">Email</label>
                                             <input type="email" placeholder="john@gmail.com"
                                                 class="form-control shadow-sm rounded-0">
                                         </div>
-                                        <div class="mb-4">
+                                        <div class="mb-3">
+                                            <label class="form-label">Profession</label>
+                                            <select class="shadow-sm rounded-0 form-select"
+                                                aria-label="Default select example" disabled>
+                                                <option selected>Select your Role</option>
+                                                <option value="1">Human Resource</option>
+                                                <option value="2">Front End Developer</option>
+                                                <option value="3">Backend Developer</option>
+                                                <option value="4">Full Stack Developer</option>
+                                            </select>
+                                        </div>
+                                        <div class="mb-3">
                                             <label class="form-label">Phone Number</label>
                                             <input type="text" placeholder="+91 46383746473"
                                                 class="form-control shadow-sm rounded-0">
                                         </div>
-                                        <div class="mb-4">
-                                            <label class="form-label">Current Location</label>
-                                            <input type="text" placeholder="Amritsar"
-                                                class="form-control shadow-sm rounded-0">
-                                        </div>
-                                        <div class="mb-4">
+                                        <div class="mb-3">
                                             <label class="form-label">Password</label>
                                             <input type="password" placeholder="******"
                                                 class="form-control shadow-sm rounded-0">
                                         </div>
-                                        <div class="mb-4">
+                                        <div class="mb-3">
                                             <label class="form-label">Confirm Password</label>
                                             <input type="password" placeholder="******"
                                                 class="form-control shadow-sm rounded-0">
                                         </div>
                                         <div class="d-flex justify-content-end">
-                                            <button type="submit"
-                                                class="btn btn-success shadow-sm rounded-0 mb-4">Update
+                                            <button
+                                                class="d-flex align-items-center btn btn-primary shadow-sm rounded-0"
+                                                type="submit"><i class="fa-solid fa-check"></i><span
+                                                    class="ms-2">Update Now</span>
                                             </button>
-                                            <button class="btn btn-danger shadow-sm rounded-0 mb-4 ms-3">Cancel</button>
+                                            <button
+                                                class="d-flex align-items-center btn btn-danger shadow-sm rounded-0 ms-3"
+                                                type="submit"><i class="fa-solid fa-xmark"></i><span
+                                                    class="ms-2">Cancel Now</span></button>
                                         </div>
                                     </form>
                                 </div>
