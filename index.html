@@ -35,7 +35,7 @@
     <!-- dashboard section -->
     <section>
         <!-- aside nav-->
-        <aside class="bg-white shadow-sm fixed-top" id="#aside">
+        <aside class="bg-white shadow-sm fixed-top vh-100" id="#aside">
             <!-- logo -->
             <!-- row -->
             <div class="row p-4">
@@ -44,7 +44,7 @@
                     <img src="./assets/images/user-logo.jpg" alt="Logo" width="60" height="60"
                         class="rounded-circle shadow-sm">
                     <div class="text-primary mt-2 fw-bold">Kanchan</div>
-                    <small class="text-center">Frontend Developer</small>
+                    <small class="text-center text-nowrap">Frontend Developer</small>
                 </div>
                 <!-- /col -->
             </div>
@@ -56,23 +56,23 @@
                     <!-- ul -->
                     <ul class="nav flex-column">
                         <li class="nav-item mx-3 mb-2">
-                            <a class="nav-link active" href="#"><i class="fa-solid fa-gauge"></i><span
+                            <a class="nav-link text-nowrap active" href="#"><i class="fa-solid fa-gauge"></i><span
                                     class="ms-3">Dashboard</span></a>
                         </li>
                         <li class="nav-item mx-3 mb-2">
-                            <a class="nav-link" href="#"><i class="fa-brands fa-wpforms"></i><span
+                            <a class="nav-link text-nowrap" href="#"><i class="fa-brands fa-wpforms"></i><span
                                     class="ms-3">Forms</span></a>
                         </li>
                         <li class="nav-item mx-3 mb-2">
-                            <a class="nav-link" href="#"><i class="fa-solid fa-gauge"></i><span class="ms-3">Form
+                            <a class="nav-link text-nowrap" href="#"><i class="fa-solid fa-gauge"></i><span class="ms-3">Form
                                     Template</span></a>
                         </li>
                         <li class="nav-item mx-3 mb-2">
-                            <a class="nav-link" href="#"><i class="fa-solid fa-gauge"></i><span
+                            <a class="nav-link text-nowrap" href="#"><i class="fa-solid fa-gauge"></i><span
                                     class="ms-3">Campaigns</span></a>
                         </li>
                         <li class="nav-item mx-3 mb-2">
-                            <a class="nav-link" href="#"><i class="fa-solid fa-gauge"></i><span
+                            <a class="nav-link text-nowrap" href="#"><i class="fa-solid fa-gauge"></i><span
                                     class="ms-3">Submissions</span></a>
                         </li>
                     </ul>
@@ -85,11 +85,11 @@
         </aside>
         <!-- /aside nav-->
         <!-- main -->
-        <main>
+        <main class="bg-white vh-100">
             <!-- header -->
             <header class="w-100 shadow-sm bg-white">
                 <!-- header-nav -->
-                <nav class="navbar navbar-expand w-100">
+                <nav aria-label="Navigation" class="navbar navbar-expand w-100 py-0">
                     <div class="container-fluid">
                         <div class="border rounded-circle shadow-sm p-2" id="aside-toggle-btn">
                             <!-- menu-svg -->
@@ -103,8 +103,8 @@
                         </div>
                         <div>
                             <ul class="navbar-nav ms-auto">
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">
+                                <li class="nav-item me-1">
+                                    <a class="nav-link p-3" href="#">
                                         <!--wishlist-svg-->
                                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
                                             viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
@@ -117,8 +117,8 @@
                                         <!--/wishlist-svg-->
                                     </a>
                                 </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">
+                                <li class="nav-item me-1">
+                                    <a class="nav-link p-3" href="#">
                                         <!--notification-svg-->
                                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
                                             viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
@@ -131,7 +131,7 @@
                                     </a>
                                 </li>
                                 <li class="nav-item dropdown user-dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink"
+                                    <a class="nav-link p-3 dropdown-toggle" href="#" id="navbarDropdownMenuLink"
                                         role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                         <!--profile-svg-->
                                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
@@ -268,7 +268,7 @@
         <!-- /main -->
     </section>
     <!-- /dashboard section -->
-    <!-- Boostrap JS -->
+    <!-- boostrap js -->
     <script src="./assets/js/bootstrap.bundle.min.js"></script>
     <!-- Custom JS -->
     <script src="./assets/js/main.js"></script>
