@@ -1,6 +1,10 @@
-//== page loader
-function loader(){
-document.getElementById("pageLoader").classList.add("d-none");
-}
+/* =================================================== */
+               /* common js file */
+/* =================================================== */
 
-setTimeout(loader,1500);
+/* ======= global page loader ======= */
+
+function loader() {
+    document.getElementById("pageLoader").classList.add("d-none");
+}
+setTimeout(loader, 1000);
