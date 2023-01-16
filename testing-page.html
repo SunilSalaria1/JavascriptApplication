@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Testing Page | Javascript Application</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- Font Family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body class="bg-light">
+    <!-- page-loader -->
+    <div id="pageLoader"
+        class="loader-wrap h-100 w-100 bg-light d-flex flex-column justify-content-center align-items-center">
+        <div class="loader">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <div id="loader-text" data-text="JavascriptApplication">JavascriptApplication</div>
+    </div>
+    <!-- /page-loader -->
+    <!-- dashboard section -->
+    <section>
+        <!-- aside nav-->
+        <aside class="bg-white shadow-sm fixed-top vh-100" id="#aside">
+            <!-- logo -->
+            <!-- row -->
+            <div class="row p-4">
+                <!-- col -->
+                <div class="col-12 d-flex justify-content-center flex-column align-items-center border-bottom pb-3">
+                    <img src="./assets/images/user-logo.jpg" alt="Logo" width="60" height="60"
+                        class="rounded-circle shadow-sm">
+                    <div class="text-primary mt-2 fw-bold">Kanchan</div>
+                    <small class="text-center text-nowrap">Frontend Developer</small>
+                </div>
+                <!-- /col -->
+            </div>
+            <!-- /row -->
+            <!-- row -->
+            <div class="row">
+                <!-- col -->
+                <div class="col-12">
+                    <!-- ul -->
+                    <ul class="nav flex-column">
+                        <li class="nav-item mx-3 mb-2">
+                            <a class="nav-link text-nowrap active" href="./index.html"><i
+                                    class="fa-solid fa-gauge"></i><span class="ms-3">Admin Portal</span></a>
+                        </li>
+                        <li class="nav-item mx-3 mb-2">
+                            <a class="nav-link text-nowrap" href="./analytics.html"><i
+                                    class="fa-brands fa-wpforms"></i><span class="ms-3">Analytics</span></a>
+                        </li>
+                        <li class="nav-item mx-3 mb-2">
+                            <a class="nav-link text-nowrap" href="./form-details.html"><i
+                                    class="fa-solid fa-gauge"></i><span class="ms-3">Form Details</span></a>
+                        </li>
+                        <li class="nav-item mx-3 mb-2">
+                            <a class="nav-link text-nowrap" href="./testing-page.html"><i
+                                    class="fa-solid fa-gauge"></i><span class="ms-3">Testing Page</span></a>
+                        </li>
+                        <li class="nav-item mx-3 mb-2">
+                            <a class="nav-link text-nowrap" href="./dummy-page.html"><i
+                                    class="fa-solid fa-gauge"></i><span class="ms-3">Dummy Page</span></a>
+                        </li>
+                    </ul>
+                    <!-- /ul -->
+                </div>
+                <!-- /col -->
+            </div>
+            <!-- /row -->
+            <!-- /logo -->
+        </aside>
+        <!-- /aside nav-->
+        <!-- main -->
+        <main class="bg-white vh-100">
+            <!-- header -->
+            <header class="w-100 shadow-sm bg-white">
+                <!-- header-nav -->
+                <nav aria-label="Navigation" class="navbar navbar-expand w-100 py-0">
+                    <div class="container-fluid">
+                        <div class="border rounded-circle shadow-sm p-2" id="aside-toggle-btn">
+                            <!-- menu-svg -->
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                                class="bi bi-list" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z">
+                                </path>
+                            </svg>
+                            <!-- /menu-svg -->
+                        </div>
+                        <div>
+                            <ul class="navbar-nav ms-auto">
+                                <li class="nav-item">
+                                    <a class="nav-link p-3" href="#">
+                                        <!--wishlist-svg-->
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round"
+                                            class="feather feather-heart align-middle">
+                                            <path
+                                                d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
+                                            </path>
+                                        </svg>
+                                        <!--/wishlist-svg-->
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link p-3" href="#">
+                                        <!--notification-svg-->
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round"
+                                            class="feather feather-bell align-middle">
+                                            <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path>
+                                            <path d="M13.73 21a2 2 0 0 1-3.46 0"></path>
+                                        </svg>
+                                        <!--/notification-svg-->
+                                    </a>
+                                </li>
+                                <li class="nav-item dropdown user-dropdown">
+                                    <a class="nav-link p-3 dropdown-toggle" href="#" id="navbarDropdownMenuLink"
+                                        role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <!--profile-svg-->
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                            fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+                                            <path
+                                                d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z">
+                                            </path>
+                                        </svg>
+                                        <!--/profile-svg-->
+                                    </a>
+                                    <ul class="dropdown-menu p-0 shadow-sm rounded-0 border"
+                                        aria-labelledby="navbarDropdownMenuLink">
+                                        <li><a class="dropdown-item py-2 border-bottom" href="#"><i
+                                                    class="fa-regular fa-user"></i><span class="ms-3">Profile</span></a>
+                                        </li>
+                                        <li><a class="dropdown-item py-2 border-bottom" href="#"><i
+                                                    class="fa-solid fa-gear"></i><span class="ms-3">Settings</span></a>
+                                        </li>
+                                        <li><a class="dropdown-item py-2" href="#"><i
+                                                    class="fa-solid fa-power-off"></i><span
+                                                    class="ms-3">Logout</span></a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+                <!-- /header-nav -->
+            </header>
+            <!-- /header -->
+            <!-- main-content -->
+            <section class="container-fluid">
+                <div>
+                    <!-- breadcrumb -->
+                    <div class="row">
+                        <div class="col py-3">
+                            <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                                <ol class="breadcrumb">
+                                    <li class="breadcrumb-item"><a class="text-black text-decoration-none" href="#"><i
+                                                class="fa-solid fa-house"></i><span class="ms-3">Home</span></a></li>
+                                    <li class="breadcrumb-item active" aria-current="page">Testing Page</li>
+                                </ol>
+                            </nav>
+                        </div>
+                    </div>
+                    <!-- /breadcrumb -->
+                    <!-- main-card -->
+                    <div class="card rounded-0 border-0 shadow-sm">
+                        <div class="card-header border-bottom bg-white py-3">
+                            <h4 class="fw-bold text-primary mb-0">Testing Page</h4>
+                        </div>
+                        <div class="card-body mt-5 bg-white">
+                            <div class="row">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, reiciendis sunt!
+                                    Unde sapiente tenetur accusantium totam, quas quae fugiat libero alias obcaecati
+                                    nulla consectetur magni facere dolores blanditiis sunt optio orem ipsum dolor sit amet consectetur adipisicing elit. Laborum, reiciendis sunt!
+                                    Unde sapiente tenetur accusantium totam, quas quae fugiat libero alias obcaecati
+                                    nulla consectetur magni facere dolores blanditiis sunt optioorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, reiciendis sunt!
+                                    Unde sapiente tenetur accusantium totam, quas quae fugiat libero alias obcaecati
+                                    nulla consectetur magni facere dolores blanditiis sunt optioorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, reiciendis sunt!
+                                    Unde sapiente tenetur accusantium totam, quas quae fugiat libero alias obcaecati
+                                    nulla consectetur magni facere dolores blanditiis sunt optio?</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /main-card -->
+                </div>
+            </section>
+            <!-- /main-content -->
+        </main>
+        <!-- /main -->
+    </section>
+    <!-- /dashboard section -->
+    <!-- boostrap js -->
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>

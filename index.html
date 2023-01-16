@@ -5,7 +5,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Javascript Application</title>
+    <title>Admin Portal - Javascript Application</title>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
     <!-- Custom CSS -->
@@ -56,24 +56,24 @@
                     <!-- ul -->
                     <ul class="nav flex-column">
                         <li class="nav-item mx-3 mb-2">
-                            <a class="nav-link text-nowrap active" href="#"><i class="fa-solid fa-gauge"></i><span
-                                    class="ms-3">Dashboard</span></a>
+                            <a class="nav-link text-nowrap active" href="./index.html"><i class="fa-solid fa-gauge"></i><span
+                                    class="ms-3">Admin Portal</span></a>
                         </li>
                         <li class="nav-item mx-3 mb-2">
-                            <a class="nav-link text-nowrap" href="#"><i class="fa-brands fa-wpforms"></i><span
-                                    class="ms-3">Forms</span></a>
+                            <a class="nav-link text-nowrap" href="./analytics.html"><i class="fa-brands fa-wpforms"></i><span
+                                    class="ms-3">Analytics</span></a>
                         </li>
                         <li class="nav-item mx-3 mb-2">
-                            <a class="nav-link text-nowrap" href="#"><i class="fa-solid fa-gauge"></i><span class="ms-3">Form
-                                    Template</span></a>
+                            <a class="nav-link text-nowrap" href="./form-details.html"><i class="fa-solid fa-gauge"></i><span
+                                    class="ms-3">Form Details</span></a>
                         </li>
                         <li class="nav-item mx-3 mb-2">
-                            <a class="nav-link text-nowrap" href="#"><i class="fa-solid fa-gauge"></i><span
-                                    class="ms-3">Campaigns</span></a>
+                            <a class="nav-link text-nowrap" href="./testing-page.html"><i class="fa-solid fa-gauge"></i><span
+                                    class="ms-3">Testing Page</span></a>
                         </li>
                         <li class="nav-item mx-3 mb-2">
-                            <a class="nav-link text-nowrap" href="#"><i class="fa-solid fa-gauge"></i><span
-                                    class="ms-3">Submissions</span></a>
+                            <a class="nav-link text-nowrap" href="./dummy-page.html"><i class="fa-solid fa-gauge"></i><span
+                                    class="ms-3">Dummy Page</span></a>
                         </li>
                     </ul>
                     <!-- /ul -->
@@ -103,7 +103,7 @@
                         </div>
                         <div>
                             <ul class="navbar-nav ms-auto">
-                                <li class="nav-item me-1">
+                                <li class="nav-item">
                                     <a class="nav-link p-3" href="#">
                                         <!--wishlist-svg-->
                                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
@@ -117,7 +117,7 @@
                                         <!--/wishlist-svg-->
                                     </a>
                                 </li>
-                                <li class="nav-item me-1">
+                                <li class="nav-item">
                                     <a class="nav-link p-3" href="#">
                                         <!--notification-svg-->
                                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
@@ -172,7 +172,7 @@
                                 <ol class="breadcrumb">
                                     <li class="breadcrumb-item"><a class="text-black text-decoration-none" href="#"><i
                                                 class="fa-solid fa-house"></i><span class="ms-3">Home</span></a></li>
-                                    <li class="breadcrumb-item active" aria-current="page">Dashboard</li>
+                                    <li class="breadcrumb-item active" aria-current="page">Admin Portal</li>
                                 </ol>
                             </nav>
                         </div>
@@ -181,83 +181,228 @@
                     <!-- main-card -->
                     <div class="card rounded-0 border-0 shadow-sm">
                         <div class="card-header border-bottom bg-white py-3">
-                            <h4 class="fw-bold text-primary mb-0">Form Details</h4>
+                            <h4 class="fw-bold text-primary mb-0">Admin Portal</h4>
                         </div>
                         <div class="card-body mt-5 bg-white">
-                            <div class="row">
-                                <!-- form -->
-                                <form action="#">
-                                    <div class="col">
-                                        <!-- row -->
-                                        <div class="row">
-                                            <!-- col -->
-                                            <div class="col-xl-6 col-12">
-                                                <div class="mb-3">
-                                                    <label class="form-label">Name</label>
-                                                    <input type="text" placeholder="John Smith"
-                                                        class="form-control shadow-sm rounded-0">
+                            <!-- search and filter -->
+                            <div class="row pb-4">
+                                <div class="col-12">
+                                    <nav aria-label="Sorting">
+                                        <div class="container-fluid">
+                                            <form>
+                                                <div class="row justify-content-between">
+                                                    <div class="col-2 d-flex align-items-center">
+                                                        <label for="sort" class="me-3">Entries</label>
+                                                        <select class="form-select shadow-sm rounded-0"
+                                                            aria-label="Default select example">
+                                                            <option selected>Show Entries</option>
+                                                            <option value="1">10</option>
+                                                            <option value="2">25</option>
+                                                            <option value="3">50</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col-3 d-flex align-items-center">
+                                                        <label for="sort" class="me-3">Search</label>
+                                                        <input class="form-control shadow-sm rounded-0" type="search"
+                                                            placeholder="Search" aria-label="Search">
+                                                    </div>
                                                 </div>
-                                                <div class="mb-3">
-                                                    <label class="form-label">Phone Number</label>
-                                                    <input type="text" placeholder="+91 46383746473"
-                                                        class="form-control shadow-sm rounded-0">
-                                                </div>
-                                                <div class="mb-3">
-                                                    <label class="form-label">Profession</label>
-                                                    <input type="text" placeholder="+91 46383746473"
-                                                        class="form-control shadow-sm rounded-0">
-                                                </div>
-                                                <div class="mb-3">
-                                                    <label class="form-label">Profession</label>
-                                                    <input type="text" placeholder="+91 46383746473"
-                                                        class="form-control shadow-sm rounded-0">
-                                                </div>
-                                                <div class="mb-3">
-                                                    <label class="form-label">Profession</label>
-                                                    <input type="text" placeholder="+91 46383746473"
-                                                        class="form-control shadow-sm rounded-0">
-                                                </div>
-                                            </div>
-                                            <!-- /col -->
-                                            <!-- col -->
-                                            <div class="col-xl-6 col-12">
-                                                <div class="mb-3">
-                                                    <label class="form-label">Email</label>
-                                                    <input type="email" placeholder="john@gmail.com"
-                                                        class="form-control shadow-sm rounded-0">
-                                                </div>
-                                                <div class="mb-3">
-                                                    <label class="form-label">Address</label>
-                                                    <input type="text" placeholder="Amritsar"
-                                                        class="form-control shadow-sm rounded-0">
-                                                </div>
-                                                <div class="mb-3">
-                                                    <label class="form-label">Address</label>
-                                                    <input type="text" placeholder="Amritsar"
-                                                        class="form-control shadow-sm rounded-0">
-                                                </div>
-                                                <div class="mb-3">
-                                                    <label class="form-label">Address</label>
-                                                    <input type="text" placeholder="Amritsar"
-                                                        class="form-control shadow-sm rounded-0">
-                                                </div>
-                                            </div>
-                                            <!-- /col -->
+                                            </form>
                                         </div>
-                                        <!-- /row -->
-                                    </div>
-                                </form>
-                                <!-- /form -->
+                                    </nav>
+                                </div>
                             </div>
+                            <!-- /search and filter -->
+                            <!-- admin-table -->
+                            <div class="row">
+                                <div class="col-12">
+                                    <!-- table -->
+                                    <table class="table table-striped rounded-0 shadow-sm">
+                                        <thead class="bg-primary text-white text-center">
+                                            <tr>
+                                                <th scope="col">#</th>
+                                                <th scope="col">First Name</th>
+                                                <th scope="col">Last Name</th>
+                                                <th scope="col">Email</th>
+                                                <th scope="col">Profession</th>
+                                                <th scope="col">Phone Number</th>
+                                                <th scope="col">Action</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody class="text-center">
+                                            <tr>
+                                                <th scope="row">1</th>
+                                                <td>Hemma</td>
+                                                <td>Kaur</td>
+                                                <td>hemma@abc.com</td>
+                                                <td>Front End Developer</td>
+                                                <td>+91 4646897515</td>
+                                                <td>
+                                                    <a href="./edit.html"
+                                                        class="bg-white text-success btn rounded-0 shadow-sm border py-1 px-2 text-decoration-none"><i
+                                                            class="fa-regular fa-pen-to-square"></i></a>
+                                                    <a href="#"
+                                                        class="bg-white text-danger btn rounded-0 shadow-sm border py-1 px-2 text-decoration-none"><i
+                                                            class="fa-solid fa-trash-can"></i></a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">2</th>
+                                                <td>Mark</td>
+                                                <td>Smith</td>
+                                                <td>mark@abc.com</td>
+                                                <td>Front End Developer</td>
+                                                <td>+91 4646897515</td>
+                                                <td>
+                                                    <a href="./edit.html"
+                                                        class="bg-white text-success btn rounded-0 shadow-sm border py-1 px-2 text-decoration-none"><i
+                                                            class="fa-regular fa-pen-to-square"></i></a>
+                                                    <a href="#"
+                                                        class="bg-white text-danger btn rounded-0 shadow-sm border py-1 px-2 text-decoration-none"><i
+                                                            class="fa-solid fa-trash-can"></i></a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">3</th>
+                                                <td>John</td>
+                                                <td>Kaur</td>
+                                                <td>john@abc.com</td>
+                                                <td>Front End Developer</td>
+                                                <td>+91 4646897515</td>
+                                                <td>
+                                                    <a href="./edit.html"
+                                                        class="bg-white text-success btn rounded-0 shadow-sm border py-1 px-2 text-decoration-none"><i
+                                                            class="fa-regular fa-pen-to-square"></i></a>
+                                                    <a href="#"
+                                                        class="bg-white text-danger btn rounded-0 shadow-sm border py-1 px-2 text-decoration-none"><i
+                                                            class="fa-solid fa-trash-can"></i></a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">4</th>
+                                                <td>Raman</td>
+                                                <td>Kaur</td>
+                                                <td>raman@abc.com</td>
+                                                <td>Front End Developer</td>
+                                                <td>+91 4646897515</td>
+                                                <td>
+                                                    <a href="./edit.html"
+                                                        class="bg-white text-success btn rounded-0 shadow-sm border py-1 px-2 text-decoration-none"><i
+                                                            class="fa-regular fa-pen-to-square"></i></a>
+                                                    <a href="#"
+                                                        class="bg-white text-danger btn rounded-0 shadow-sm border py-1 px-2 text-decoration-none"><i
+                                                            class="fa-solid fa-trash-can"></i></a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">5</th>
+                                                <td>Mark</td>
+                                                <td>Kaur</td>
+                                                <td>mark@abc.com</td>
+                                                <td>Front End Developer</td>
+                                                <td>+91 4646897515</td>
+                                                <td>
+                                                    <a href="./edit.html"
+                                                        class="bg-white text-success btn rounded-0 shadow-sm border py-1 px-2 text-decoration-none"><i
+                                                            class="fa-regular fa-pen-to-square"></i></a>
+                                                    <a href="#"
+                                                        class="bg-white text-danger btn rounded-0 shadow-sm border py-1 px-2 text-decoration-none"><i
+                                                            class="fa-solid fa-trash-can"></i></a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">6</th>
+                                                <td>Mark</td>
+                                                <td>Kaur</td>
+                                                <td>mark@abc.com</td>
+                                                <td>Front End Developer</td>
+                                                <td>+91 4646897515</td>
+                                                <td>
+                                                    <a href="./edit.html"
+                                                        class="bg-white text-success btn rounded-0 shadow-sm border py-1 px-2 text-decoration-none"><i
+                                                            class="fa-regular fa-pen-to-square"></i></a>
+                                                    <a href="#"
+                                                        class="bg-white text-danger btn rounded-0 shadow-sm border py-1 px-2 text-decoration-none"><i
+                                                            class="fa-solid fa-trash-can"></i></a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">7</th>
+                                                <td>Mark</td>
+                                                <td>Kaur</td>
+                                                <td>mark@abc.com</td>
+                                                <td>Front End Developer</td>
+                                                <td>+91 4646897515</td>
+                                                <td>
+                                                    <a href="./edit.html"
+                                                        class="bg-white text-success btn rounded-0 shadow-sm border py-1 px-2 text-decoration-none"><i
+                                                            class="fa-regular fa-pen-to-square"></i></a>
+                                                    <a href="#"
+                                                        class="bg-white text-danger btn rounded-0 shadow-sm border py-1 px-2 text-decoration-none"><i
+                                                            class="fa-solid fa-trash-can"></i></a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">8</th>
+                                                <td>Mark</td>
+                                                <td>Kaur</td>
+                                                <td>mark@abc.com</td>
+                                                <td>Front End Developer</td>
+                                                <td>+91 4646897515</td>
+                                                <td>
+                                                    <a href="./edit.html"
+                                                        class="bg-white text-success btn rounded-0 shadow-sm border py-1 px-2 text-decoration-none"><i
+                                                            class="fa-regular fa-pen-to-square"></i></a>
+                                                    <a href="#"
+                                                        class="bg-white text-danger btn rounded-0 shadow-sm border py-1 px-2 text-decoration-none"><i
+                                                            class="fa-solid fa-trash-can"></i></a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">9</th>
+                                                <td>Mark</td>
+                                                <td>Kaur</td>
+                                                <td>mark@abc.com</td>
+                                                <td>Front End Developer</td>
+                                                <td>+91 4646897515</td>
+                                                <td>
+                                                    <a href="./edit.html"
+                                                        class="bg-white text-success btn rounded-0 shadow-sm border py-1 px-2 text-decoration-none"><i
+                                                            class="fa-regular fa-pen-to-square"></i></a>
+                                                    <a href="#"
+                                                        class="bg-white text-danger btn rounded-0 shadow-sm border py-1 px-2 text-decoration-none"><i
+                                                            class="fa-solid fa-trash-can"></i></a>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <!-- /table -->
+                                </div>
+                            </div>
+                            <!-- /admin-table -->
                         </div>
                         <div class="card-footer border-0 bg-white py-3">
-                            <div class="d-flex justify-content-end">
-                                <button class="d-flex align-items-center btn btn-primary shadow-sm rounded-0"><i
-                                        class="fa-solid fa-check"></i><span class="ms-2">Submit Now</span>
-                                </button>
-                                <button class="d-flex align-items-center btn btn-danger shadow-sm rounded-0 ms-3"><i
-                                        class="fa-solid fa-xmark"></i><span class="ms-2">Cancel Now</span></button>
+                            <!-- pagination -->
+                            <div class="row">
+                                <div class="col-12 d-flex justify-content-end align-items-center">
+                                    <nav aria-label="Pagination">
+                                        <ul class="pagination shadow-sm mb-0">
+                                            <li class="page-item disabled">
+                                                <a class="page-link">Previous</a>
+                                            </li>
+                                            <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                            <li class="page-item" aria-current="page">
+                                                <a class="page-link" href="#">2</a>
+                                            </li>
+                                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                            <li class="page-item">
+                                                <a class="page-link" href="#">Next</a>
+                                            </li>
+                                        </ul>
+                                    </nav>
+                                </div>
                             </div>
+                            <!-- /pagination -->
                         </div>
                     </div>
                     <!-- /main-card -->
