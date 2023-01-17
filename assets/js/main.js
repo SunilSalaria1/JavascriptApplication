@@ -26,19 +26,18 @@ asideLink.querySelectorAll(".nav-link").forEach(function (link) {
         link.classList.add("active");
     }
 });
-// const toastTrigger = document.getElementById('deleteToast');
-// const toastLiveExample = document.getElementById('liveToast')
-// if (toastTrigger) {
-//   toastTrigger.addEventListener('click', () => {
-//     const toast = new bootstrap.Toast(toastLiveExample)
-//     toast.show()
-//   })
-// }
 
-// document.getElementById("deleteToast").addEventListener('click', deleteToast);
-// const toastLive = document.getElementById('deleteToastData');
+/* ======= show and hide delete popup ======= */
 
-// function deleteToast(){
-//   let toast = new bootstrap.Toast(toastLive)
-//         toast.show()
-// }
+// show the delete toast
+document.getElementById("deletePopup").addEventListener('click', showdeletePopup);
+
+function showdeletePopup(){
+   document.getElementById('deletePopupShow').classList.remove('d-none');
+}
+
+// hide the delete popup
+document.getElementById("closedeletePopup").addEventListener('click', hidedeletePopup);
+function hidedeletePopup(){
+   document.getElementById('deletePopupShow').classList.add('d-none');
+}

@@ -6,7 +6,7 @@
 
 :root {
     --primary-color: #5e14b2;
-    --primary-color-hover: #5e14b2;
+    --primary-color-hover: #5510a4;
     --black-color: #000000;
 }
 
@@ -191,7 +191,9 @@ aside .nav .nav-item .nav-link:hover,
 aside .nav .nav-item .nav-link:focus {
     color: var(--primary-color);
 }
-
+#asideToggleBtn{
+    cursor: pointer;
+}
 /* header css */
 header .dropdown .show {
     left: auto;
@@ -228,6 +230,14 @@ main {
     color: var(--primary-color);
 }
 
+/* toaster */
+.delete-popup {
+    z-index: 9999;
+    opacity: 98%;
+}
+.delete-popup .btn-close:focus,.delete-popup .btn-close:focus-visible {
+    box-shadow: none !important;
+}
 
 /* =================================================== */
 /* media query css */
