@@ -1,5 +1,5 @@
 /* =================================================== */
-               /* common css file */
+/* common css file */
 /* =================================================== */
 
 /* ======= global variables declarartion ======= */
@@ -192,9 +192,7 @@ aside .nav .nav-item .nav-link:focus {
     color: var(--primary-color);
 }
 
-
 /* header css */
-
 header .dropdown .show {
     left: auto;
     right: 0;
@@ -224,8 +222,26 @@ main {
     transition: margin-left 0.5s;
     z-index: 9999 !important;
 }
-/* breadcrumb css */
 
+/* breadcrumb css */
 .breadcrumb-item.active {
     color: var(--primary-color);
+}
+
+
+/* =================================================== */
+/* media query css */
+/* =================================================== */
+
+@media screen and (min-width: 300px) and (max-width:768px) {
+    main {
+        margin-left: 0px;
+    }
+
+    aside {
+        width: 0px;
+    }
+    .aside-hide {
+        width: 250px;
+    }
 }
