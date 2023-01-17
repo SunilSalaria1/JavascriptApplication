@@ -1,5 +1,5 @@
 /* =================================================== */
-                 /* common js file */
+/* common js file */
 /* =================================================== */
 
 /* ======= global page loader ======= */
@@ -11,8 +11,18 @@ setTimeout(loader, 1000);
 
 /* ======= toggle menu ======= */
 
-document.getElementById("aside-toggle-btn").addEventListener('click', menuToggle);
+document.getElementById("asideToggleBtn").addEventListener('click', menuToggle);
 function menuToggle() {
     document.querySelector("aside").classList.toggle("aside-hide");
     document.querySelector("main").classList.toggle("main-full");
 }
+
+/* ======= active nav links ======= */
+let asideLink = document.querySelector("aside");
+asideLink.querySelectorAll(".nav-link").forEach(function (link) {
+    if (link.href === window.location.href) {
+        link.classList.add("active");
+    }
+});
+
+

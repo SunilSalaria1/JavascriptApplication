@@ -224,3 +224,8 @@ main {
     transition: margin-left 0.5s;
     z-index: 9999 !important;
 }
+/* breadcrumb css */
+
+.breadcrumb-item.active {
+    color: var(--primary-color);
+}
