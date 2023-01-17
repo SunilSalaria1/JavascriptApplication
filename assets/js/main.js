@@ -26,5 +26,3 @@ asideLink.querySelectorAll(".nav-link").forEach(function (link) {
         link.classList.add("active");
     }
 });
-
-
