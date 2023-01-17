@@ -26,3 +26,19 @@ asideLink.querySelectorAll(".nav-link").forEach(function (link) {
         link.classList.add("active");
     }
 });
+// const toastTrigger = document.getElementById('deleteToast');
+// const toastLiveExample = document.getElementById('liveToast')
+// if (toastTrigger) {
+//   toastTrigger.addEventListener('click', () => {
+//     const toast = new bootstrap.Toast(toastLiveExample)
+//     toast.show()
+//   })
+// }
+
+// document.getElementById("deleteToast").addEventListener('click', deleteToast);
+// const toastLive = document.getElementById('deleteToastData');
+
+// function deleteToast(){
+//   let toast = new bootstrap.Toast(toastLive)
+//         toast.show()
+// }
