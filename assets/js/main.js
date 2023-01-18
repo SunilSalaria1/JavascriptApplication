@@ -53,7 +53,7 @@ if (checkDeletePopup !== 0) {
 
 /* ======= post register form data with single pair values ======= */
 
-let checkRegister = document.querySelectorAll("registerForm").length;
+let checkRegister = document.querySelectorAll("#registerForm").length;
 if (checkRegister !== 0) {
 
     // post register form data with single pair values
@@ -82,6 +82,16 @@ if (checkRegister !== 0) {
                 password: userPassword,
                 confirmPassword: userConfirmPassword
             })
+        }).then(function (response) {
+            return response.json();
+        }).then(function (data) {
+            console.log('Success:', data);
+            document.getElementById("registerSuccessToast").classList.remove("d-none");
+            debugger
+        }).catch(function (error) {
+            console.log(`Error:`, error);
+            alert("error is");
+            document.getElementById("registerErrorToast").classList.remove("d-none");
         })
     });
 
@@ -102,4 +112,25 @@ if (checkRegister !== 0) {
     // });
 }
 
+/* ======= get data from api ======= */
+
+fetch('http://localhost:3004/user')
+    .then(function (response) {
+        return response.json();
+    })
+    .then(function (data) {
+        let tableData = " ";
+        data.forEach(function (userData) {
+        tableData += `<tr>
+        <th scope="row">${userData.id}</th>
+        <td>${userData.firstName}</td>
+        <td>${userData.lastName}</td>
+        <td>${userData.email}</td>
+        <td>${userData.profession}</td>
+        <td>${userData.phoneNumber}</td>
+        <td>${document.getElementById("actionButtons").innerHTML}</td>
+        </tr>`
+        });
+        document.getElementById("tableBody").innerHTML = tableData;
+    })
 

@@ -249,7 +249,7 @@
                             <div class="row">
                                 <div class="col-12 table-responsive">
                                     <!-- table -->
-                                    <table class="table table-striped rounded-0 shadow-sm">
+                                    <table id="table" class="table table-striped rounded-0 shadow-sm">
                                         <thead class="bg-primary text-white text-center">
                                             <tr>
                                                 <th scope="col">#</th>
@@ -261,147 +261,13 @@
                                                 <th scope="col">Action</th>
                                             </tr>
                                         </thead>
-                                        <tbody class="text-center">
+                                        <tbody class="text-center" id="tableBody">
                                             <tr>
-                                                <th scope="row">1</th>
-                                                <td>Hemma</td>
-                                                <td>Kaur</td>
-                                                <td>hemma@abc.com</td>
-                                                <td>Front End Developer</td>
-                                                <td>+91 4646897515</td>
-                                                <td>
+                                                <td id="actionButtons">
                                                     <a href="./edit.html"
                                                         class="bg-white text-success btn rounded-0 shadow-sm border py-1 px-2 text-decoration-none"><i
                                                             class="fa-regular fa-pen-to-square"></i></a>
                                                     <a href="#" id="deletePopup"
-                                                        class="bg-white text-danger btn rounded-0 shadow-sm border py-1 px-2 text-decoration-none"><i
-                                                            class="fa-solid fa-trash-can"></i></a>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <th scope="row">2</th>
-                                                <td>Mark</td>
-                                                <td>Smith</td>
-                                                <td>mark@abc.com</td>
-                                                <td>Front End Developer</td>
-                                                <td>+91 4646897515</td>
-                                                <td>
-                                                    <a href="./edit.html"
-                                                        class="bg-white text-success btn rounded-0 shadow-sm border py-1 px-2 text-decoration-none"><i
-                                                            class="fa-regular fa-pen-to-square"></i></a>
-                                                    <a href="#"
-                                                        class="bg-white text-danger btn rounded-0 shadow-sm border py-1 px-2 text-decoration-none"><i
-                                                            class="fa-solid fa-trash-can"></i></a>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <th scope="row">3</th>
-                                                <td>John</td>
-                                                <td>Kaur</td>
-                                                <td>john@abc.com</td>
-                                                <td>Front End Developer</td>
-                                                <td>+91 4646897515</td>
-                                                <td>
-                                                    <a href="./edit.html"
-                                                        class="bg-white text-success btn rounded-0 shadow-sm border py-1 px-2 text-decoration-none"><i
-                                                            class="fa-regular fa-pen-to-square"></i></a>
-                                                    <a href="#"
-                                                        class="bg-white text-danger btn rounded-0 shadow-sm border py-1 px-2 text-decoration-none"><i
-                                                            class="fa-solid fa-trash-can"></i></a>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <th scope="row">4</th>
-                                                <td>Raman</td>
-                                                <td>Kaur</td>
-                                                <td>raman@abc.com</td>
-                                                <td>Front End Developer</td>
-                                                <td>+91 4646897515</td>
-                                                <td>
-                                                    <a href="./edit.html"
-                                                        class="bg-white text-success btn rounded-0 shadow-sm border py-1 px-2 text-decoration-none"><i
-                                                            class="fa-regular fa-pen-to-square"></i></a>
-                                                    <a href="#"
-                                                        class="bg-white text-danger btn rounded-0 shadow-sm border py-1 px-2 text-decoration-none"><i
-                                                            class="fa-solid fa-trash-can"></i></a>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <th scope="row">5</th>
-                                                <td>Mark</td>
-                                                <td>Kaur</td>
-                                                <td>mark@abc.com</td>
-                                                <td>Front End Developer</td>
-                                                <td>+91 4646897515</td>
-                                                <td>
-                                                    <a href="./edit.html"
-                                                        class="bg-white text-success btn rounded-0 shadow-sm border py-1 px-2 text-decoration-none"><i
-                                                            class="fa-regular fa-pen-to-square"></i></a>
-                                                    <a href="#"
-                                                        class="bg-white text-danger btn rounded-0 shadow-sm border py-1 px-2 text-decoration-none"><i
-                                                            class="fa-solid fa-trash-can"></i></a>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <th scope="row">6</th>
-                                                <td>Mark</td>
-                                                <td>Kaur</td>
-                                                <td>mark@abc.com</td>
-                                                <td>Front End Developer</td>
-                                                <td>+91 4646897515</td>
-                                                <td>
-                                                    <a href="./edit.html"
-                                                        class="bg-white text-success btn rounded-0 shadow-sm border py-1 px-2 text-decoration-none"><i
-                                                            class="fa-regular fa-pen-to-square"></i></a>
-                                                    <a href="#"
-                                                        class="bg-white text-danger btn rounded-0 shadow-sm border py-1 px-2 text-decoration-none"><i
-                                                            class="fa-solid fa-trash-can"></i></a>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <th scope="row">7</th>
-                                                <td>Mark</td>
-                                                <td>Kaur</td>
-                                                <td>mark@abc.com</td>
-                                                <td>Front End Developer</td>
-                                                <td>+91 4646897515</td>
-                                                <td>
-                                                    <a href="./edit.html"
-                                                        class="bg-white text-success btn rounded-0 shadow-sm border py-1 px-2 text-decoration-none"><i
-                                                            class="fa-regular fa-pen-to-square"></i></a>
-                                                    <a href="#"
-                                                        class="bg-white text-danger btn rounded-0 shadow-sm border py-1 px-2 text-decoration-none"><i
-                                                            class="fa-solid fa-trash-can"></i></a>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <th scope="row">8</th>
-                                                <td>Mark</td>
-                                                <td>Kaur</td>
-                                                <td>mark@abc.com</td>
-                                                <td>Front End Developer</td>
-                                                <td>+91 4646897515</td>
-                                                <td>
-                                                    <a href="./edit.html"
-                                                        class="bg-white text-success btn rounded-0 shadow-sm border py-1 px-2 text-decoration-none"><i
-                                                            class="fa-regular fa-pen-to-square"></i></a>
-                                                    <a href="#"
-                                                        class="bg-white text-danger btn rounded-0 shadow-sm border py-1 px-2 text-decoration-none"><i
-                                                            class="fa-solid fa-trash-can"></i></a>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <th scope="row">9</th>
-                                                <td>Mark</td>
-                                                <td>Kaur</td>
-                                                <td>mark@abc.com</td>
-                                                <td>Front End Developer</td>
-                                                <td>+91 4646897515</td>
-                                                <td>
-                                                    <a href="./edit.html"
-                                                        class="bg-white text-success btn rounded-0 shadow-sm border py-1 px-2 text-decoration-none"><i
-                                                            class="fa-regular fa-pen-to-square"></i></a>
-                                                    <a href="#"
                                                         class="bg-white text-danger btn rounded-0 shadow-sm border py-1 px-2 text-decoration-none"><i
                                                             class="fa-solid fa-trash-can"></i></a>
                                                 </td>
