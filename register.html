@@ -17,8 +17,8 @@
 </head>
 
 <body>
-       <!-- page-loader -->
-       <div id="pageLoader"
+    <!-- page-loader -->
+    <div id="pageLoader"
        class="loader-wrap h-100 w-100 bg-light d-flex flex-column justify-content-center align-items-center">
        <div class="loader">
            <div class="line"></div>
@@ -27,7 +27,7 @@
        </div>
               <div id="loader-text" data-text="JavascriptApplication">JavascriptApplication</div>
    </div>
-   <!-- /page-loader -->
+    <!-- /page-loader -->
     <!-- form section -->
     <section class="vh-100  bg-light">
         <div class="container-fluid">
@@ -47,49 +47,53 @@
                                 <!-- /col -->
                                 <!-- col -->
                                 <div class="col-12 px-4">
-                                    <form>
+                                    <form id="registerForm">
                                         <div class="mb-3">
-                                            <label class="form-label">First Name <span class="text-danger">*</span></label>
-                                            <input type="text" placeholder="John"
+                                            <label class="form-label">First Name <span
+                                                    class="text-danger">*</span></label>
+                                            <input name="firstName" type="text" placeholder="John" id="firstName"
                                                 class="form-control shadow-sm rounded-0" required>
                                         </div>
                                         <div class="mb-3">
                                             <label class="form-label">Last Name</label>
-                                            <input type="text" placeholder="Smith"
+                                            <input name="lastName" type="text" placeholder="Smith" id="lastName"
                                                 class="form-control shadow-sm rounded-0">
                                         </div>
                                         <div class="mb-3">
                                             <label class="form-label">Email <span class="text-danger">*</span></label>
-                                            <input type="email" placeholder="john@gmail.com"
+                                            <input name="email" type="email" placeholder="john@gmail.com" id="email"
                                                 class="form-control shadow-sm rounded-0" required>
                                         </div>
                                         <div class="mb-3">
-                                            <label class="form-label">Profession <span class="text-danger">*</span></label>
-                                            <select class="shadow-sm rounded-0 form-select"
-                                                aria-label="Default select example" required>
+                                            <label class="form-label">Profession <span
+                                                    class="text-danger">*</span></label>
+                                            <select name="profession" class="shadow-sm rounded-0 form-select"
+                                                aria-label="Default select example" id="profession" required>
                                                 <option selected>Select your Role</option>
-                                                <option value="1">Human Resource</option>
-                                                <option value="2">Front End Developer</option>
-                                                <option value="3">Backend Developer</option>
-                                                <option value="4">Full Stack Developer</option>
+                                                <option value="Human Resource">Human Resource</option>
+                                                <option value="Front End Developer">Front End Developer</option>
+                                                <option value="Backend Developer">Backend Developer</option>
+                                                <option value="Full Stack Developer">Full Stack Developer</option>
                                             </select>
                                         </div>
                                         <div class="mb-3">
                                             <label class="form-label">Phone Number</label>
-                                            <input type="text" placeholder="+91 46383746473"
+                                            <input name="phoneNumber" type="text" placeholder="+91 46383746473"
+                                                id="phoneNumber" class="form-control shadow-sm rounded-0">
+                                        </div>
+                                        <div class="mb-3">
+                                            <label class="form-label">Password <span
+                                                    class="text-danger">*</span></label>
+                                            <input name="password" type="password" placeholder="******" id="password"
                                                 class="form-control shadow-sm rounded-0">
                                         </div>
                                         <div class="mb-3">
-                                            <label class="form-label">Password <span class="text-danger">*</span></label>
-                                            <input type="password" placeholder="******"
-                                                class="form-control shadow-sm rounded-0">
+                                            <label class="form-label">Confirm Password <span
+                                                    class="text-danger">*</span></label>
+                                            <input name="confirmPassword" type="password" placeholder="******"
+                                                id="confirmPassword" class="form-control shadow-sm rounded-0">
                                         </div>
-                                        <div class="mb-3">
-                                            <label class="form-label">Confirm Password <span class="text-danger">*</span></label>
-                                            <input type="password" placeholder="******"
-                                                class="form-control shadow-sm rounded-0">
-                                        </div>
-                                        <button type="submit"
+                                        <button type="submit" id="registerSubmit"
                                             class="btn btn-primary shadow-sm rounded-0 w-100 mb-3">Register
                                             Now</button>
                                         <div class="text-center">Already have an account? <a href="./login.html"
