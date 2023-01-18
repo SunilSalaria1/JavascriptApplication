@@ -11,64 +11,34 @@
       "id": 1
     },
     {
-      "firstName": "rahul",
-      "lastName": "kumar",
-      "email": "admin@gmail.com",
-      "profession": "Human Resource",
+      "firstName": "Rahul",
+      "lastName": "Kumar",
+      "email": "rahul@gmail.com",
+      "profession": "Backend Developer",
       "phoneNumber": "+919814268272",
-      "password": "lllll",
-      "confirmPassword": "lllllll",
+      "password": "rahul@123",
+      "confirmPassword": "rahul@123",
       "id": 2
     },
     {
-      "firstName": "rahul",
-      "lastName": "kaur",
-      "email": "info@lpinfotech.com",
-      "profession": "Human Resource",
+      "firstName": "Hardeep",
+      "lastName": "Singh",
+      "email": "hardeep@gmail.com",
+      "profession": "Full Stack Developer",
       "phoneNumber": "+919814268272",
-      "password": "hhhhhhhh",
-      "confirmPassword": "hhhhhhhhh",
+      "password": "hardeep@123",
+      "confirmPassword": "ardeep@123",
       "id": 3
     },
     {
-      "firstName": "kan",
-      "lastName": "ka",
-      "email": "kanchandeep.kaur@lpinfotech.com",
-      "profession": "Front End Developer",
+      "firstName": "Sunil",
+      "lastName": "Salaria",
+      "email": "sunil@gmail.com",
+      "profession": "Full Stack Developer",
       "phoneNumber": "+919814268272",
-      "password": "jjjjj",
-      "confirmPassword": "jjjjjj",
+      "password": "sunil@123",
+      "confirmPassword": "sunil@123",
       "id": 4
-    },
-    {
-      "firstName": "rahul",
-      "lastName": "kaur",
-      "email": "admin@gmail.com",
-      "profession": "Human Resource",
-      "phoneNumber": "+919814268272",
-      "password": "gggg",
-      "confirmPassword": "ggggg",
-      "id": 5
-    },
-    {
-      "firstName": "rahul",
-      "lastName": "kaur",
-      "email": "kanchandeep.kaur@lpinfotech.com",
-      "profession": "Human Resource",
-      "phoneNumber": "+919814268272",
-      "password": "fffff",
-      "confirmPassword": "ffffff",
-      "id": 6
-    },
-    {
-      "firstName": "pooja",
-      "lastName": "chauhan",
-      "email": "info@lpinfotech.com",
-      "profession": "Front End Developer",
-      "phoneNumber": "+919814268272",
-      "password": "0000000",
-      "confirmPassword": "888888888",
-      "id": 7
     }
   ]
 }

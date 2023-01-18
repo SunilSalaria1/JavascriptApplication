@@ -113,15 +113,16 @@ if (checkRegister !== 0) {
 }
 
 /* ======= get data from api ======= */
-
-fetch('http://localhost:3004/user')
-    .then(function (response) {
-        return response.json();
-    })
-    .then(function (data) {
-        let tableData = " ";
-        data.forEach(function (userData) {
-        tableData += `<tr>
+let checkTable = document.querySelectorAll("#tableBody").length;
+if (checkTable !== 0) {
+    fetch('http://localhost:3004/user')
+        .then(function (response) {
+            return response.json();
+        })
+        .then(function (data) {
+            let tableData = " ";
+            data.forEach(function (userData) {
+                tableData += `<tr>
         <th scope="row">${userData.id}</th>
         <td>${userData.firstName}</td>
         <td>${userData.lastName}</td>
@@ -130,7 +131,30 @@ fetch('http://localhost:3004/user')
         <td>${userData.phoneNumber}</td>
         <td>${document.getElementById("actionButtons").innerHTML}</td>
         </tr>`
-        });
-        document.getElementById("tableBody").innerHTML = tableData;
-    })
+            });
+            document.getElementById("tableBody").innerHTML = tableData;
+        })
+}
+ 
+/* ======= get and match login form data ======= */
 
+let checkLogin = document.querySelectorAll("#loginForm").length;
+if (checkLogin !== 0) {
+    document.getElementById("loginForm").addEventListener('submit', function (event) {
+        event.preventDefault();
+        let userLoginEmail = document.querySelector('#loginEmail').value;
+        let userLoginPassword = document.querySelector('#loginPassword').value;
+        fetch('http://localhost:3004/user').then(function (response) {
+            return response.json();
+        }).then(function (data) {
+            for (let i = 0; i < data.length; i++) {
+                if (userLoginEmail == data[i].email && userLoginPassword == data[i].password) {
+                    console.log("successfully logged in");
+                    location.href = "/index.html";
+                    return;
+                }
+            }
+            console.log("data not found");
+        })
+    });
+}
