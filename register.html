@@ -38,7 +38,7 @@
             <!-- form confirmation alert -->
             <!-- success toast -->
             <div id="registerSuccessToast"
-                class="toast d-none ms-auto align-items-center text-white fw-bold bg-success border-0 fade show"
+                class="toast ms-auto align-items-center text-white fw-bold bg-success border-0 fade hide"
                 role="alert" aria-live="assertive" aria-atomic="true">
                 <div class="d-flex">
                     <div class="toast-body" id="registerConfirmation"><span class="ms-2 h6 fw-bold">Success</span>
@@ -51,7 +51,7 @@
             <!-- /success toast -->
             <!-- error toast -->
             <div id="registerErrorToast"
-                class="toast d-none ms-auto align-items-center text-white fw-bold bg-danger border-0 fade show"
+                class="toast ms-auto align-items-center text-white fw-bold bg-danger border-0 fade hide"
                 role="alert" aria-live="assertive" aria-atomic="true">
                 <div class="d-flex">
                     <div class="toast-body" id="registerConfirmation"><span class="ms-2 h6 fw-bold">Error</span>
@@ -79,14 +79,15 @@
                                 <!-- /col -->
                                 <!-- col -->
                                 <div class="col-12 px-4">
-                                    <form id="registerForm" method="post">
+                                    <form id="registerForm" method="POST">
                                         <div class="mb-3">
                                             <label class="form-label">First Name <span
                                                     class="text-danger">*</span></label>
                                             <input name="firstName" type="text" placeholder="John" id="firstName"
-                                                pattern="[a-zA-Z]{3,}" class="form-control shadow-sm rounded-0"
-                                                required>
-                                            <!-- <span class="small text-muted">Please enter characters only</span> -->
+                                                class="form-control shadow-sm rounded-0"
+                                                >
+                                                <span id="requiredNameField"
+                                                class="requiredField small text-danger"></span>
                                         </div>
                                         <div class="mb-3">
                                             <label class="form-label">Last Name</label>
@@ -95,42 +96,50 @@
                                         </div>
                                         <div class="mb-3">
                                             <label class="form-label">Email <span class="text-danger">*</span></label>
-                                            <input name="email" type="email" placeholder="john@gmail.com" id="email"
-                                                class="form-control shadow-sm rounded-0" required>
+                                            <input name="email" placeholder="john@gmail.com" id="email"
+                                                class="form-control shadow-sm rounded-0">
+                                                <span id="requiredEmailField"
+                                                class="requiredField small text-danger"></span>
                                         </div>
                                         <div class="mb-3">
                                             <label class="form-label">Profession <span
                                                     class="text-danger">*</span></label>
                                             <select name="profession" class="shadow-sm rounded-0 form-select"
                                                 aria-label="Default select example" id="profession" required>
-                                                <option selected>Select your Role</option>
+                                                <option>Select your Role</option>
                                                 <option value="Human Resource">Human Resource</option>
                                                 <option value="Front End Developer">Front End Developer</option>
                                                 <option value="Backend Developer">Backend Developer</option>
                                                 <option value="Full Stack Developer">Full Stack Developer</option>
                                             </select>
+                                            <span id="requiredProfessionField"
+                                                class="requiredField small text-danger"></span>
                                         </div>
                                         <div class="mb-3">
                                             <label class="form-label">Phone Number</label>
                                             <input name="phoneNumber" type="text" placeholder="+91 46383746473"
-                                                minlength="10" id="phoneNumber"
+                                               id="phoneNumber"
                                                 class="form-control shadow-sm rounded-0">
                                         </div>
                                         <div class="mb-3">
                                             <label class="form-label">Password <span
                                                     class="text-danger">*</span></label>
                                             <input name="password" type="password" placeholder="******" id="password"
-                                                class="form-control shadow-sm rounded-0" required>
+                                                class="form-control shadow-sm rounded-0">
+                                                <span id="requiredPasswordField"
+                                                class="requiredField small text-danger"></span>
                                         </div>
                                         <div class="mb-3">
                                             <label class="form-label">Confirm Password <span
                                                     class="text-danger">*</span></label>
                                             <input name="confirmPassword" type="password" placeholder="******"
-                                                id="confirmPassword" class="form-control shadow-sm rounded-0" required>
+                                                id="confirmPassword" class="form-control shadow-sm rounded-0">
+                                                <span id="requiredConfirmField"
+                                                class="requiredField small text-danger"></span>
                                             <span id="passwordNotMatched" class="text-danger small d-none">Please make
                                                 sure your passwords match!</span>
                                         </div>
-                                        <button type="submit" id="registerSubmit"
+                                        <button type="submit"
                                             class="btn btn-primary shadow-sm rounded-0 w-100 mb-3">Register
                                             Now</button>
                                         <div class="text-center">Already have an account? <a href="./login.html"

@@ -35,6 +35,34 @@
     <!-- form section -->
     <section class="vh-100  bg-light">
         <div class="container-fluid">
+            <!-- form confirmation alert -->
+            <!-- success toast -->
+            <div id="editSuccessToast"
+                class="toast ms-auto align-items-center text-white fw-bold bg-success border-0 fade hide"
+                role="alert" aria-live="assertive" aria-atomic="true">
+                <div class="d-flex">
+                    <div class="toast-body" id="editConfirmation"><span class="ms-2 h6 fw-bold">Updated</span>
+                        <div class="small ms-2 text-light">Your form has been updated.</div>
+                    </div>
+                    <button type="button" class="btn-close btn-close-white me-2 mt-2 m-auto" data-bs-dismiss="toast"
+                        aria-label="Close"></button>
+                </div>
+            </div>
+            <!-- /success toast -->
+            <!-- error toast -->
+            <div id="editErrorToast"
+                class="toast ms-auto align-items-center text-white fw-bold bg-danger border-0 fade hide"
+                role="alert" aria-live="assertive" aria-atomic="true">
+                <div class="d-flex">
+                    <div class="toast-body" id="ediConfirmation"><span class="ms-2 h6 fw-bold">Error</span>
+                        <div class="small ms-2 text-light">Something went wrong. Try again.</div>
+                    </div>
+                    <button type="button" class="btn-close btn-close-white me-2 mt-2 m-auto" data-bs-dismiss="toast"
+                        aria-label="Close"></button>
+                </div>
+            </div>
+            <!-- /error toast -->
+            <!-- /form confirmation alert -->
             <!-- row -->
             <div class="row vh-100">
                 <!-- col -->
@@ -51,7 +79,7 @@
                                 <!-- /col -->
                                 <!-- col -->
                                 <div class="col-12 px-4">
-                                    <form>
+                                    <form id="editForm">
                                         <div class="mb-3">
                                             <label class="form-label">First Name</label>
                                             <input type="text" placeholder="John"
@@ -94,10 +122,12 @@
                                                 class="form-control shadow-sm rounded-0">
                                         </div>
                                         <div class="d-flex flex-column flex-sm-row justify-content-end">
-                                            <button class="btn btn-danger shadow-sm rounded-0 mb-0 mb-sm-0 order-2 order-sm-1"><i
+                                            <button id="editCancel"
+                                                class="btn btn-danger shadow-sm rounded-0 mb-0 mb-sm-0 order-2 order-sm-1"><i
                                                     class="fa-solid fa-xmark"></i><span class="ms-2">Cancel
                                                     Now</span></button>
-                                            <button class="btn btn-primary shadow-sm rounded-0 mb-2 mb-sm-0 ms-sm-3 order-1 order-sm-2"><i
+                                            <button type="submit"
+                                                class="btn btn-primary shadow-sm rounded-0 mb-2 mb-sm-0 ms-sm-3 order-1 order-sm-2"><i
                                                     class="fa-solid fa-check"></i><span class="ms-2">Update Now</span>
                                             </button>
                                         </div>

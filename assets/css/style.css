@@ -239,7 +239,7 @@ main {
     box-shadow: none !important;
 }
 /* login toast */
-#loginSuccessToast, #loginErrorToast{
+#loginSuccessToast, #loginErrorToast,#registerSuccessToast, #registerErrorToast, #editSuccessToast, #editErrorToast{
     position: absolute;
     right: 20px;
     top: 20px;
