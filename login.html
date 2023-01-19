@@ -18,7 +18,7 @@
 
 <body>
     <!-- page-loader -->
-    <div id="pageLoader"
+    <!-- <div id="pageLoader"
         class="loader-wrap h-100 w-100 bg-light d-flex flex-column justify-content-center align-items-center">
         <div class="loader">
             <div class="line"></div>
@@ -26,11 +26,39 @@
             <div class="line"></div>
         </div>
         <div id="loader-text" data-text="JavascriptApplication">JavascriptApplication</div>
-    </div>
+    </div> -->
     <!-- /page-loader -->
     <!-- form section -->
     <section class="vh-100  bg-light">
         <div class="container-fluid">
+            <!-- form confirmation alert -->
+            <!-- success toast -->
+            <div id="loginSuccessToast"
+                class="toast ms-auto align-items-center text-white fw-bold bg-success border-0 fade hide" role="alert"
+                aria-live="assertive" aria-atomic="true">
+                <div class="d-flex">
+                    <div class="toast-body" id="loginConfirmation"><span class="ms-2 h6 fw-bold">Success</span>
+                        <div class="small ms-2 text-light">You have successfully logged in.</div>
+                    </div>
+                    <button type="button" class="btn-close btn-close-white me-2 mt-2 m-auto" data-bs-dismiss="toast"
+                        aria-label="Close"></button>
+                </div>
+            </div>
+            <!-- /success toast -->
+            <!-- error toast -->
+            <div id="loginErrorToast"
+                class="toast ms-auto align-items-center text-white fw-bold bg-danger border-0 fade hide" role="alert"
+                aria-live="assertive" aria-atomic="true">
+                <div class="d-flex">
+                    <div class="toast-body"><span class="ms-2 h6 fw-bold">Error</span>
+                        <div class="small ms-2 text-light">Email or password does not match. Try again.</div>
+                    </div>
+                    <button type="button" id="loginConfirmationClose" class="btn-close btn-close-white me-2 mt-2 m-auto"
+                        data-bs-dismiss="toast" aria-label="Close"></button>
+                </div>
+            </div>
+            <!-- /error toast -->
+            <!-- /form confirmation alert -->
             <!-- row -->
             <div class="row vh-100">
                 <!-- col -->
@@ -47,17 +75,21 @@
                                 <!-- /col -->
                                 <!-- col -->
                                 <div class="col-12 px-4">
-                                    <form id="loginForm">
+                                    <form id="loginForm" method="GET">
                                         <div class="mb-3">
                                             <label class="form-label">Email <span class="text-danger">*</span></label>
-                                            <input type="email" id="loginEmail" placeholder="john@gmail.com"
-                                                class="form-control shadow-sm rounded-0" required>
+                                            <input id="loginEmail" placeholder="john@gmail.com"
+                                                class="form-control shadow-sm rounded-0" name="login_email">
+                                            <span id="requiredEmailField"
+                                                class="requiredField small text-danger"></span>
                                         </div>
                                         <div class="mb-3">
                                             <label class="form-label">Password <span
                                                     class="text-danger">*</span></label>
                                             <input type="password" id="loginPassword" placeholder="******"
-                                                class="form-control shadow-sm rounded-0" required>
+                                                class="form-control shadow-sm rounded-0">
+                                            <span id="requiredPasswordField"
+                                                class="requiredField small text-danger"></span>
                                             <div class="text-end my-2"><a href="./forgot-password.html"
                                                     class="text-decoration-none text-dark">Forgot Passsword?</a></div>
                                         </div>
@@ -88,7 +120,7 @@
     <!-- boostrap js -->
     <script src="./assets/js/bootstrap.bundle.min.js"></script>
     <!-- custom js -->
-    <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/register.js"></script>
 </body>
 
 </html>

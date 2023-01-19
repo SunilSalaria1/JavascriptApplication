@@ -38,12 +38,11 @@
             <!-- form confirmation alert -->
             <!-- success toast -->
             <div id="registerSuccessToast"
-                class="toast d-none ms-auto align-items-center text-white fw-bold bg-success border-0 fade show" role="alert"
-                aria-live="assertive" aria-atomic="true">
+                class="toast d-none ms-auto align-items-center text-white fw-bold bg-success border-0 fade show"
+                role="alert" aria-live="assertive" aria-atomic="true">
                 <div class="d-flex">
-                    <div class="toast-body" id="registerConfirmation"><span
-                            class="ms-2 h6 fw-bold">Success</span>
-                            <div class="small ms-2 text-light">Your form has been submitted.</div>
+                    <div class="toast-body" id="registerConfirmation"><span class="ms-2 h6 fw-bold">Success</span>
+                        <div class="small ms-2 text-light">Your form has been submitted.</div>
                     </div>
                     <button type="button" class="btn-close btn-close-white me-2 mt-2 m-auto" data-bs-dismiss="toast"
                         aria-label="Close"></button>
@@ -52,12 +51,11 @@
             <!-- /success toast -->
             <!-- error toast -->
             <div id="registerErrorToast"
-                class="toast d-none ms-auto align-items-center text-white fw-bold bg-danger border-0 fade show" role="alert"
-                aria-live="assertive" aria-atomic="true">
+                class="toast d-none ms-auto align-items-center text-white fw-bold bg-danger border-0 fade show"
+                role="alert" aria-live="assertive" aria-atomic="true">
                 <div class="d-flex">
-                    <div class="toast-body" id="registerConfirmation"><span
-                            class="ms-2 h6 fw-bold">Error</span>
-                            <div class="small ms-2 text-light">Something went wrong. Try again.</div>
+                    <div class="toast-body" id="registerConfirmation"><span class="ms-2 h6 fw-bold">Error</span>
+                        <div class="small ms-2 text-light">Something went wrong. Try again.</div>
                     </div>
                     <button type="button" class="btn-close btn-close-white me-2 mt-2 m-auto" data-bs-dismiss="toast"
                         aria-label="Close"></button>
@@ -86,7 +84,9 @@
                                             <label class="form-label">First Name <span
                                                     class="text-danger">*</span></label>
                                             <input name="firstName" type="text" placeholder="John" id="firstName"
-                                                class="form-control shadow-sm rounded-0" required>
+                                                pattern="[a-zA-Z]{3,}" class="form-control shadow-sm rounded-0"
+                                                required>
+                                            <!-- <span class="small text-muted">Please enter characters only</span> -->
                                         </div>
                                         <div class="mb-3">
                                             <label class="form-label">Last Name</label>
@@ -113,19 +113,22 @@
                                         <div class="mb-3">
                                             <label class="form-label">Phone Number</label>
                                             <input name="phoneNumber" type="text" placeholder="+91 46383746473"
-                                                id="phoneNumber" class="form-control shadow-sm rounded-0">
+                                                minlength="10" id="phoneNumber"
+                                                class="form-control shadow-sm rounded-0">
                                         </div>
                                         <div class="mb-3">
                                             <label class="form-label">Password <span
                                                     class="text-danger">*</span></label>
                                             <input name="password" type="password" placeholder="******" id="password"
-                                                class="form-control shadow-sm rounded-0">
+                                                class="form-control shadow-sm rounded-0" required>
                                         </div>
                                         <div class="mb-3">
                                             <label class="form-label">Confirm Password <span
                                                     class="text-danger">*</span></label>
                                             <input name="confirmPassword" type="password" placeholder="******"
-                                                id="confirmPassword" class="form-control shadow-sm rounded-0">
+                                                id="confirmPassword" class="form-control shadow-sm rounded-0" required>
+                                            <span id="passwordNotMatched" class="text-danger small d-none">Please make
+                                                sure your passwords match!</span>
                                         </div>
                                         <button type="submit" id="registerSubmit"
                                             class="btn btn-primary shadow-sm rounded-0 w-100 mb-3">Register
