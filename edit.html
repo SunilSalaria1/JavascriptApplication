@@ -79,55 +79,55 @@
                                 <!-- /col -->
                                 <!-- col -->
                                 <div class="col-12 px-4">
-                                    <form id="editForm">
+                                    <form id="editForm" method="PUT">
                                         <div class="mb-3">
                                             <label class="form-label">First Name</label>
-                                            <input type="text" placeholder="John"
+                                            <input type="text" placeholder="John" id="firstName"
                                                 class="form-control shadow-sm rounded-0">
                                         </div>
                                         <div class="mb-3">
                                             <label class="form-label">Last Name</label>
-                                            <input type="text" placeholder="Smith"
+                                            <input type="text" placeholder="Smith" id="lastName"
                                                 class="form-control shadow-sm rounded-0">
                                         </div>
                                         <div class="mb-3">
                                             <label class="form-label">Email</label>
-                                            <input type="email" placeholder="john@gmail.com"
-                                                class="form-control shadow-sm rounded-0">
+                                            <input type="email" placeholder="john@gmail.com" id="email"
+                                                class="form-control shadow-sm rounded-0" disabled>
                                         </div>
                                         <div class="mb-3">
                                             <label class="form-label">Profession</label>
-                                            <select class="shadow-sm rounded-0 form-select"
+                                            <select class="shadow-sm rounded-0 form-select" id="profession"
                                                 aria-label="Default select example">
-                                                <option selected>Select your Role</option>
-                                                <option value="1">Human Resource</option>
-                                                <option value="2">Front End Developer</option>
-                                                <option value="3">Backend Developer</option>
-                                                <option value="4">Full Stack Developer</option>
+                                                <option>Select your Role</option>
+                                                <option value="Human Resource">Human Resource</option>
+                                                <option value="Front End Developer">Front End Developer</option>
+                                                <option value="Backend Developer">Backend Developer</option>
+                                                <option value="Full Stack Developer">Full Stack Developer</option>
                                             </select>
                                         </div>
                                         <div class="mb-3">
                                             <label class="form-label">Phone Number</label>
-                                            <input type="text" placeholder="+91 46383746473"
+                                            <input type="text" placeholder="+91 46383746473"  id="phoneNumber"
                                                 class="form-control shadow-sm rounded-0">
                                         </div>
                                         <div class="mb-3">
                                             <label class="form-label">Password</label>
-                                            <input type="password" placeholder="******"
-                                                class="form-control shadow-sm rounded-0">
+                                            <input placeholder="******" id="password"
+                                                class="form-control shadow-sm rounded-0" disabled>
                                         </div>
                                         <div class="mb-3">
                                             <label class="form-label">Confirm Password</label>
-                                            <input type="password" placeholder="******"
-                                                class="form-control shadow-sm rounded-0">
+                                            <input placeholder="******"   id="confirmPassword"
+                                                class="form-control shadow-sm rounded-0" disabled>
                                         </div>
                                         <div class="d-flex flex-column flex-sm-row justify-content-end">
                                             <button id="editCancel"
-                                                class="btn btn-danger shadow-sm rounded-0 mb-0 mb-sm-0 order-2 order-sm-1"><i
+                                                class="btn btn-danger shadow-sm rounded-0 mb-0 mb-sm-0 order-2 order-sm-1 my-3"><i
                                                     class="fa-solid fa-xmark"></i><span class="ms-2">Cancel
                                                     Now</span></button>
                                             <button type="submit"
-                                                class="btn btn-primary shadow-sm rounded-0 mb-2 mb-sm-0 ms-sm-3 order-1 order-sm-2"><i
+                                                class="btn btn-primary shadow-sm rounded-0 mb-2 mb-sm-0 ms-sm-3 order-1 order-sm-2 my-3"><i
                                                     class="fa-solid fa-check"></i><span class="ms-2">Update Now</span>
                                             </button>
                                         </div>

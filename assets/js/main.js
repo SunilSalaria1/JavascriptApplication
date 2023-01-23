@@ -11,8 +11,12 @@ document.onreadystatechange = function () {
 };
 
 /* ======= toggle menu ======= */
-let checkToggle = document.querySelectorAll("asideToggleBtn").length;
+let checkToggle = document.querySelectorAll("#asideToggleBtn").length;
 if (checkToggle !== 0) {
+    let accountName = localStorage.getItem('LoggedInUserName');
+    let accountProfession = localStorage.getItem('LoggedInUserProfession');
+    document.querySelector('#profileName').innerHTML = accountName;
+    document.querySelector('#profileDesignation').innerHTML = accountProfession;
     document.querySelector("#asideToggleBtn").addEventListener('click', menuToggle);
     function menuToggle() {
         document.querySelector("aside").classList.toggle("aside-hide");
@@ -97,7 +101,7 @@ if (checkRegister !== 0) {
                         document.getElementById("requiredProfessionField").innerText = "";
                         document.getElementById("profession").style.borderColor = "#ced4da";
                         fetch('http://localhost:3004/user', {
-                            method: 'post',
+                            method: 'POST',
                             headers: {
                                 'Content-Type': 'application/json'
                             },
@@ -113,14 +117,12 @@ if (checkRegister !== 0) {
                         }).then(function (response) {
                             return response.json();
                         }).then(function (data) {
-                            console.log('Success:', data);
                             document.getElementById("loginSuccessToast").classList.replace("hide", "show");
+                            console.log('Success:', data);
+                        }).catch(function (error) {
+                            console.log(`Error:`, error);
+                            document.getElementById("loginErrorToast").classList.replace("hide", "show");
                         })
-                            .catch(function (error) {
-                                console.log(`Error:`, error);
-                                alert("error is");
-                                document.getElementById("loginErrorToast").classList.replace("hide", "show");
-                            })
                     }
                 }
                 else {
@@ -181,7 +183,8 @@ if (checkRegister !== 0) {
     // });
 }
 
-/* ======= get data from api ======= */
+/* ======= get data from api and construct table ======= */
+
 let checkTable = document.querySelectorAll("#tableBody").length;
 if (checkTable !== 0) {
     fetch('http://localhost:3004/user')
@@ -198,12 +201,134 @@ if (checkTable !== 0) {
         <td>${userData.email}</td>
         <td>${userData.profession}</td>
         <td>${userData.phoneNumber}</td>
-        <td>${document.getElementById("actionButtons").innerHTML}</td>
+          <td>${document.getElementById("actionButtons").innerHTML}</td>
         </tr>`
             });
+            // click on edit and go to edit page
             document.getElementById("tableBody").innerHTML = tableData;
-        })
+            document.getElementById("tableBody").addEventListener('click', function (e) {
+                e.preventDefault();
+                let currentUserId = e.target.parentElement.id;
+                let targetElement = e.target.parentElement;
+                let getUserId = (targetElement.parentElement.parentElement).children[0].innerText;
+                const url = "http://localhost:3004/user";
+                fetch(`${url}/${getUserId}`).then(function (response) {
+                    return response.json();
+                }).then(function (data) {
+                    localStorage.setItem('editUserId', data.id);
+                    if (currentUserId == "editUser") {
+                        window.location.href = "/edit.html"
+                    }
+                })
+            });
+            // click on delete and delete a particular record
+            document.getElementById("tableBody").innerHTML = tableData;
+            document.getElementById("tableBody").addEventListener('click', function (e) {
+                e.preventDefault();
+                let currentUserId = e.target.parentElement.id;
+                console.log(currentUserId);
+                let targetElement = e.target.parentElement;
+                let getUserId = (targetElement.parentElement.parentElement).children[0].innerText;
+                if (currentUserId == "deletePopup") {
+                    document.querySelector('#deletePopupShow').classList.remove('d-none');
+                    document.querySelector('#deleteUserDetails').addEventListener('click', function() {
+                        const url = "http://localhost:3004/user";
+                        fetch(`${url}/${getUserId}`, {
+                            method: 'DELETE',
+                        }).then(function (response) {
+                            return response.json();
+                        }).then(function (data) {
+                            document.getElementById("deleteSuccessToast").classList.replace("hide", "show");
+                            console.log(data);
+                        })
+                    });
+                    document.querySelector('#canceldeletePopup').addEventListener('click', function () {
+                        document.querySelector('#deletePopupShow').classList.add('d-none');
+                    })
+                }
+            });
+        });
 }
+
+
+/* ======= update data of edit form ======= */
+let checkEditForm = document.querySelectorAll("#editForm").length;
+if (checkEditForm !== 0) {
+
+    // get data from database and fill in edit form
+    let getlocalUserId = localStorage.getItem('editUserId');
+    const url = "http://localhost:3004/user";
+    fetch(`${url}/${getlocalUserId}`).then(function (response) {
+        return response.json()
+    }).then(function (data) {
+        console.log(data);
+        document.querySelector('#firstName').value = data.firstName;
+        document.querySelector('#lastName').value = data.lastName;
+        document.querySelector('#email').value = data.email;
+        document.querySelector('#profession').value = data.profession;
+        document.querySelector('#phoneNumber').value = data.phoneNumber;
+        document.querySelector('#password').value = data.password;
+        document.querySelector('#confirmPassword').value = data.confirmPassword;
+        // replace the data in database on clicking update button
+        document.getElementById("editForm").addEventListener('submit', function (event) {
+            event.preventDefault();
+            fetch(`${url}/${getlocalUserId}`, {
+                method: 'PUT',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({
+                    firstName: document.querySelector('#firstName').value,
+                    lastName: document.querySelector('#lastName').value,
+                    email: document.querySelector('#email').value,
+                    profession: document.querySelector('#profession').value,
+                    phoneNumber: document.querySelector('#phoneNumber').value,
+                })
+            }).then(function (response) {
+                return response.json();
+            }).then(function (data) {
+                console.log(data);
+                document.getElementById("editSuccessToast").classList.replace("hide", "show");
+                window.location.href = "/index.html";
+            })
+        })
+
+    })
+}
+
+/* ======= edit form data button clicks ======= */
+
+// let checkEdit = document.querySelectorAll("#editForm").length;
+// if (checkEdit !== 0) {
+
+//     document.getElementById("editForm").addEventListener('submit', function (event) {
+//         event.preventDefault();
+//         fetch('http://localhost:3004/user', {
+//             method: 'POST',
+//             headers: {
+//                 'Content-Type': 'application/json'
+//             },
+//             body: JSON.stringify({
+//                 firstName: userFirstName,
+//                 lastName: userLastName,
+//                 email: userEmail,
+//                 profession: userProfession,
+//                 phoneNumber: userPhoneNumber,
+//                 password: userPassword,
+//                 confirmPassword: userConfirmPassword
+//             })
+//         })
+//         document.getElementById("editSuccessToast").classList.replace("hide", "show");
+//     })
+
+//     document.getElementById("editCancel").addEventListener('click', function () {
+//         window.location.href = "/index.html";
+//     })
+// }
+
+
+
+
 
 /* ======= get and match login form data with validations ======= */
 
@@ -234,10 +359,13 @@ if (checkLogin !== 0) {
                     for (let i = 0; i < data.length; i++) {
                         if (userLoginEmail == data[i].email && userLoginPassword == data[i].password) {
                             document.getElementById("loginSuccessToast").classList.replace("hide", "show");
+                            localStorage.setItem('LoggedInUserName', data[i].firstName);
+                            localStorage.setItem('LoggedInUserProfession', data[i].profession);
                             setTimeout(function () {
-                                window.location.href = "/index.html"
+                                window.location.href = "/index.html";
                             }, 1000)
-                            return;
+                            console.log(data[i]);
+                            return data[i];
                         }
                     }
                     document.getElementById("loginErrorToast").classList.replace("hide", "show");
@@ -260,20 +388,5 @@ if (checkLogin !== 0) {
     document.getElementById("loginPassword").addEventListener('keydown', function () {
         document.getElementById("requiredPasswordField").innerText = "";
         document.getElementById("loginPassword").style.borderColor = "#ced4da";
-    })
-}
-
-/* ======= edit form data ======= */
-
-let checkEdit = document.querySelectorAll("#editForm").length;
-if (checkEdit !== 0) {
-    // update button
-    document.getElementById("editForm").addEventListener('submit', function (event) {
-        event.preventDefault();
-        document.getElementById("editSuccessToast").classList.replace("hide", "show");
-    })
-    // cancel button
-    document.getElementById("editCancel").addEventListener('click', function () {
-        window.location.href = "/index.html";
     })
 }

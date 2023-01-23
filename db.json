@@ -2,163 +2,33 @@
   "user": [
     {
       "firstName": "kanchan",
-      "lastName": "kaur",
-      "email": "kanchan@gmail.com",
-      "profession": "Front End Developer",
-      "phoneNumber": "+91 8765436787",
-      "password": "kanchan@123",
-      "confirmPassword": "kanchan@123",
-      "id": 1
-    },
-    {
-      "firstName": "Rahul",
-      "lastName": "Kumar",
-      "email": "rahul@gmail.com",
-      "profession": "Backend Developer",
-      "phoneNumber": "+919814268272",
-      "password": "rahul@123",
-      "confirmPassword": "rahul@123",
-      "id": 2
-    },
-    {
-      "firstName": "Hardeep",
-      "lastName": "Singh",
-      "email": "hardeep@gmail.com",
-      "profession": "Full Stack Developer",
-      "phoneNumber": "+919814268272",
-      "password": "hardeep@123",
-      "confirmPassword": "ardeep@123",
-      "id": 3
-    },
-    {
-      "firstName": "Sunil",
-      "lastName": "Salaria",
-      "email": "sunil@gmail.com",
-      "profession": "Full Stack Developer",
-      "phoneNumber": "+919814268272",
-      "password": "sunil@123",
-      "confirmPassword": "sunil@123",
-      "id": 4
-    },
-    {
-      "firstName": "Pooja",
-      "lastName": "Chauhan",
-      "email": "pooja@gmail.com",
-      "profession": "Human Resource",
-      "phoneNumber": "+919814268272",
-      "password": "pooja@123",
-      "confirmPassword": "pooja@123",
-      "id": 5
-    },
-    {
-      "firstName": "Rajeev",
-      "lastName": "Salaria",
-      "email": "rajeev@gmail.com",
-      "profession": "Backend Developer",
-      "phoneNumber": "+919814268272",
-      "password": "rajeev@123",
-      "confirmPassword": "rajeev@123",
-      "id": 6
-    },
-    {
-      "firstName": "Rajni",
-      "lastName": "Mehta",
-      "email": "rajni@gmail.com",
-      "profession": "Human Resource",
-      "phoneNumber": "+919814268272",
-      "password": "rajni@123",
-      "confirmPassword": "ajni@123",
-      "id": 7
-    },
-    {
-      "firstName": "John",
-      "lastName": "Smith",
-      "email": "john@gmail.com",
-      "profession": "Front End Developer",
-      "phoneNumber": "+919814268272",
-      "password": "john@123",
-      "confirmPassword": "john@123",
-      "id": 8
-    },
-    {
-      "firstName": "Aryan",
-      "lastName": "Kumar",
-      "email": "aryan@gmail.com",
-      "profession": "Backend Developer",
-      "phoneNumber": "+919814268272",
-      "password": "aryan@123",
-      "confirmPassword": "aryan@123",
-      "id": 9
-    },
-    {
-      "firstName": "Aman",
-      "lastName": "Singh",
-      "email": "aman@gmail.com",
-      "profession": "Front End Developer",
-      "phoneNumber": "+919814268272",
-      "password": "aman@123",
-      "confirmPassword": "aman2123",
-      "id": 10
-    },
-    {
-      "firstName": "Asim",
-      "lastName": "Riyaz",
-      "email": "asim@gmail.com",
-      "profession": "Backend Developer",
-      "phoneNumber": "+919814268272",
-      "password": "asim@123",
-      "confirmPassword": "asim2123",
-      "id": 11
-    },
-    {
-      "firstName": "Ram",
-      "lastName": "Sharma",
-      "email": "ram@gmail.com",
-      "profession": "Backend Developer",
-      "phoneNumber": "+919814268272",
-      "password": "ram@123",
-      "confirmPassword": "ram@123",
-      "id": 12
-    },
-    {
-      "firstName": "Sham",
       "lastName": "kumar",
-      "email": "sham@gmail.com",
+      "email": "info@lpinfotech.com",
+      "profession": "Backend Developer",
+      "phoneNumber": "+91 8765436787",
+      "password": "dddd",
+      "confirmPassword": "dddd",
+      "id": 19
+    },
+    {
+      "firstName": "pooja",
+      "lastName": "kumar",
+      "email": "info@lpinfotech.com",
       "profession": "Backend Developer",
       "phoneNumber": "+919814268272",
-      "password": "sham@123",
-      "confirmPassword": "sham@123",
-      "id": 13
+      "password": "ssss",
+      "confirmPassword": "ssss",
+      "id": 21
     },
     {
       "firstName": "rahul",
       "lastName": "kaur",
-      "email": "info@lpinfotech.com",
-      "profession": "Human Resource",
-      "phoneNumber": "+919814268272",
-      "password": "dddddddddd",
-      "confirmPassword": "dddddddd",
-      "id": 14
-    },
-    {
-      "firstName": "Angad",
-      "lastName": "Bedi",
-      "email": "angad@gmail.com",
+      "email": "admin@gmail.com",
       "profession": "Backend Developer",
-      "phoneNumber": "+919814268272",
-      "password": "angad@123",
-      "confirmPassword": "angad@123",
-      "id": 15
-    },
-    {
-      "firstName": "Mahir",
-      "lastName": "Salaria",
-      "email": "mahir@gmail.com",
-      "profession": "Full Stack Developer",
-      "phoneNumber": "+919814268272",
-      "password": "mahir@123",
-      "confirmPassword": "mahir@123",
-      "id": 16
+      "phoneNumber": "+91 8765436787",
+      "password": "eeee",
+      "confirmPassword": "eeee",
+      "id": 23
     }
   ]
 }
